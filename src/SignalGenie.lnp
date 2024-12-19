@@ -1,0 +1,22 @@
+--cpu ARM7TDMI
+".\main.o"
+".\startup.o"
+".\taskcapture.o"
+".\taskgenerate.o"
+".\taskplot.o"
+".\taskterminal.o"
+".\glcd.o"
+".\adc.o"
+".\dac.o"
+".\gpio.o"
+".\uart.o"
+".\port.o"
+".\list.o"
+".\heap_2.o"
+".\portasm.o"
+".\tasks.o"
+".\queue.o"
+--strict --scatter ".\SignalGenie.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\SignalGenie.map" -o .\SignalGenie.axf

@@ -7,7 +7,7 @@
 
   <Targets>
     <Target>
-      <TargetName>Target 1</TargetName>
+      <TargetName>SignalGenie</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
       <TargetOption>
@@ -379,7 +379,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath></IncludePath>
+              <IncludePath>FreeRTOS\Source\portable\RVDS</IncludePath>
             </VariousControls>
           </Aads>
           <LDads>
@@ -403,7 +403,7 @@
       </TargetOption>
       <Groups>
         <Group>
-          <GroupName>Source Group 1</GroupName>
+          <GroupName>Main</GroupName>
           <Files>
             <File>
               <FileName>main.c</FileName>
@@ -415,25 +415,34 @@
               <FileType>2</FileType>
               <FilePath>.\Startup.s</FilePath>
             </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>AL</GroupName>
+        </Group>
+        <Group>
+          <GroupName>HAL</GroupName>
+        </Group>
+        <Group>
+          <GroupName>MCAL</GroupName>
+        </Group>
+        <Group>
+          <GroupName>RTOS</GroupName>
+          <Files>
+            <File>
+              <FileName>port.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\FreeRTOS\Source\portable\RVDS\ARM7_LPC21xx\port.c</FilePath>
+            </File>
             <File>
               <FileName>list.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\FreeRTOS\Source\list.c</FilePath>
             </File>
             <File>
-              <FileName>queue.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\FreeRTOS\Source\queue.c</FilePath>
-            </File>
-            <File>
-              <FileName>tasks.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\FreeRTOS\Source\tasks.c</FilePath>
-            </File>
-            <File>
-              <FileName>portASM.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>.\FreeRTOS\Source\portable\RVDS\ARM7_LPC21xx\portASM.s</FilePath>
+              <FileName>FreeRTOSConfig.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\FreeRTOSConfig.h</FilePath>
             </File>
             <File>
               <FileName>heap_2.c</FileName>
@@ -441,9 +450,19 @@
               <FilePath>.\FreeRTOS\Source\portable\MemMang\heap_2.c</FilePath>
             </File>
             <File>
-              <FileName>port.c</FileName>
+              <FileName>portASM.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\FreeRTOS\Source\portable\RVDS\ARM7_LPC21xx\portASM.s</FilePath>
+            </File>
+            <File>
+              <FileName>tasks.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\FreeRTOS\Source\portable\RVDS\ARM7_LPC21xx\port.c</FilePath>
+              <FilePath>.\FreeRTOS\Source\tasks.c</FilePath>
+            </File>
+            <File>
+              <FileName>queue.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\FreeRTOS\Source\queue.c</FilePath>
             </File>
           </Files>
         </Group>
