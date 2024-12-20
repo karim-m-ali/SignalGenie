@@ -3,6 +3,7 @@
 // @title Task Title
 
 #include "taskCapture.h"
+#include "../MCAL/ADC.h"
 
 #include <FreeRTOS.h>
 #include <task.h>
@@ -23,9 +24,19 @@ extern volatile uint16_t ticksDelayAfterCapture;
 // Function definitions go here
 
 
-void taskCapture(void *unused) {
-	while (1) {
-				// vTaskDelay(pdMS_TO_TICKS(100)); // delay for 100 ms for example
-
-	}
+void taskCapture(void *unused)
+{
+	uint16_t sample = 0;
+	
+	while (1)
+		{
+			if(ticksDelayAfterCapture > 0)
+			{
+				ADC_read(&sample);
+        if (xQueueSend(queueSamplesToPlot, &sample, portMAX_DELAY) == pdPASS) {
+					// Data was successfully sent to the queue
+					}
+				vTaskDelay(ticksDelayAfterCapture);
+			}
+		}
 }
