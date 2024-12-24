@@ -1,4 +1,4 @@
-// @author Your Name
+// @author Ahmed Elwakad
 // @date YYYY-MM-DD
 // @title Task Title
 
@@ -9,8 +9,24 @@
 
 #include <stdint.h>
 
-void GPIO_setPinDirection(uint8_t port, uint8_t pin, uint8_t isOutput);
+typedef enum{
+	GPIO_PORT0,
+  GPIO_PORT1	
+}GPIO_PORT_t;
 
-void GPIO_setPinLevel(uint8_t port, uint8_t pin, uint8_t isHigh);
+typedef enum{
+	GPIO_INPUT,
+  GPIO_OUTPUT	
+}GPIO_t;
+
+typedef enum{
+	GPIO_LOW,
+  GPIO_HIGH
+}GPIO_OUTPUT_t;
+
+
+void GPIO_setPinDirection(GPIO_PORT_t port, uint8_t pin, GPIO_t isOutput);
+
+void GPIO_setPinLevel(GPIO_PORT_t port, uint8_t pin, GPIO_OUTPUT_t isHigh);
 
 #endif // GPIO_H

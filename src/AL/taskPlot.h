@@ -1,4 +1,4 @@
-// @author Your Name
+// @author Ahmed Elwakad
 // @date YYYY-MM-DD
 // @title Task Title
 
@@ -6,6 +6,6 @@
 #define TASKPLOT_H
 
 // Function declarations or other header content go here
-void taskPlot(void *unused);
+void taskPlot(void *param);
 
 #endif // TASKPLOT_H
