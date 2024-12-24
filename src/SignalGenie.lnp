@@ -5,7 +5,7 @@
 ".\taskgenerate.o"
 ".\taskplot.o"
 ".\taskterminal.o"
-".\glcd.o"
+".\ks0108.o"
 ".\adc.o"
 ".\dac.o"
 ".\gpio.o"

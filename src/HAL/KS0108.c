@@ -2,7 +2,7 @@
 
 
 #include "../MCAL/GPIO.h"
-#include "KS0108_interface.h"
+#include "KS0108.h"
 
 #include <FreeRTOS.h>
 #include <task.h>

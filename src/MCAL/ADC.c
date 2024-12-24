@@ -30,7 +30,7 @@ void ADC_read(uint16_t * ptrSample) {
   AD0CR |= (1 << 24); // Start conversion (START = 001)
 
   // Wait for the conversion to complete
-  while (!(AD0DR1 & (1 << 31))) {
+  while (!(AD0DR1 & (1u << 31))) {
       // Wait until the DONE bit (bit 31) in AD0DR1 is set
   }
 

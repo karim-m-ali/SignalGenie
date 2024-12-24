@@ -1,9 +1,9 @@
 Dependencies for Project 'SignalGenie', Target 'SignalGenie': (DO NOT MODIFY !)
-F (.\main.c)(0x67646C41)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -IFreeRTOS\Source\include -IFreeRTOS\Source\portable\RVDS\ARM7_LPC21xx -I.-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-DARM7_LPC21xx_KEIL_RVDS -DKEIL_THUMB_INTERWORK-o .\main.o --omf_browse .\main.crf --depend .\main.d)
+F (.\main.c)(0x676AC080)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -IFreeRTOS\Source\include -IFreeRTOS\Source\portable\RVDS\ARM7_LPC21xx -I.-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-DARM7_LPC21xx_KEIL_RVDS -DKEIL_THUMB_INTERWORK-o .\main.o --omf_browse .\main.crf --depend .\main.d)
 I (FreeRTOS\Source\include\FreeRTOS.h)(0x67639460)
 I (C:\Keil\ARM\ARMCC\include\stddef.h)(0x51C819B4)
 I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C819B4)
-I (.\FreeRTOSConfig.h)(0x67642E24)
+I (.\FreeRTOSConfig.h)(0x6769C220)
 I (C:\Keil\ARM\Inc\Philips\lpc21xx.h)(0x532C4638)
 I (FreeRTOS\Source\include\projdefs.h)(0x67639460)
 I (FreeRTOS\Source\include\portable.h)(0x67639460)
@@ -15,33 +15,33 @@ I (FreeRTOS\Source\include\list.h)(0x67639460)
 I (FreeRTOS\Source\include\queue.h)(0x67639460)
 I (AL/taskGenerate.h)(0x67646535)
 I (AL/taskCapture.h)(0x6764655D)
-I (AL/taskPlot.h)(0x67646531)
-I (AL/taskTerminal.h)(0x67646523)
+I (AL/taskPlot.h)(0x676AC085)
+I (AL/taskTerminal.h)(0x6769C6B7)
 F (.\Startup.s)(0x673EBBA4)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -IFreeRTOS\Source\portable\RVDS-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
-F (.\AL\taskCapture.c)(0x67646C5F)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -IFreeRTOS\Source\include -IFreeRTOS\Source\portable\RVDS\ARM7_LPC21xx -I.-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-DARM7_LPC21xx_KEIL_RVDS -DKEIL_THUMB_INTERWORK-o .\taskcapture.o --omf_browse .\taskcapture.crf --depend .\taskcapture.d)
+F (.\AL\taskCapture.c)(0x6769C5C0)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -IFreeRTOS\Source\include -IFreeRTOS\Source\portable\RVDS\ARM7_LPC21xx -I.-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-DARM7_LPC21xx_KEIL_RVDS -DKEIL_THUMB_INTERWORK-o .\taskcapture.o --omf_browse .\taskcapture.crf --depend .\taskcapture.d)
 F (.\AL\taskCapture.h)(0x6764655D)()
-F (.\AL\taskGenerate.c)(0x67646C59)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -IFreeRTOS\Source\include -IFreeRTOS\Source\portable\RVDS\ARM7_LPC21xx -I.-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-DARM7_LPC21xx_KEIL_RVDS -DKEIL_THUMB_INTERWORK-o .\taskgenerate.o --omf_browse .\taskgenerate.crf --depend .\taskgenerate.d)
+F (.\AL\taskGenerate.c)(0x6769BCEE)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -IFreeRTOS\Source\include -IFreeRTOS\Source\portable\RVDS\ARM7_LPC21xx -I.-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-DARM7_LPC21xx_KEIL_RVDS -DKEIL_THUMB_INTERWORK-o .\taskgenerate.o --omf_browse .\taskgenerate.crf --depend .\taskgenerate.d)
 F (.\AL\taskGenerate.h)(0x67646535)()
-F (.\AL\taskPlot.c)(0x67646C54)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -IFreeRTOS\Source\include -IFreeRTOS\Source\portable\RVDS\ARM7_LPC21xx -I.-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-DARM7_LPC21xx_KEIL_RVDS -DKEIL_THUMB_INTERWORK-o .\taskplot.o --omf_browse .\taskplot.crf --depend .\taskplot.d)
-F (.\AL\taskPlot.h)(0x67646531)()
-F (.\AL\taskTerminal.c)(0x67646A40)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -IFreeRTOS\Source\include -IFreeRTOS\Source\portable\RVDS\ARM7_LPC21xx -I.-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-DARM7_LPC21xx_KEIL_RVDS -DKEIL_THUMB_INTERWORK-o .\taskterminal.o --omf_browse .\taskterminal.crf --depend .\taskterminal.d)
-F (.\AL\taskTerminal.h)(0x67646523)()
-F (.\HAL\GLCD.c)(0x67646C4E)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -IFreeRTOS\Source\include -IFreeRTOS\Source\portable\RVDS\ARM7_LPC21xx -I.-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-DARM7_LPC21xx_KEIL_RVDS -DKEIL_THUMB_INTERWORK-o .\glcd.o --omf_browse .\glcd.crf --depend .\glcd.d)
-F (.\HAL\GLCD.h)(0x67646BFA)()
-F (.\MCAL\ADC.c)(0x67646C25)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -IFreeRTOS\Source\include -IFreeRTOS\Source\portable\RVDS\ARM7_LPC21xx -I.-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-DARM7_LPC21xx_KEIL_RVDS -DKEIL_THUMB_INTERWORK-o .\adc.o --omf_browse .\adc.crf --depend .\adc.d)
+F (.\AL\taskPlot.c)(0x676AC7C6)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -IFreeRTOS\Source\include -IFreeRTOS\Source\portable\RVDS\ARM7_LPC21xx -I.-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-DARM7_LPC21xx_KEIL_RVDS -DKEIL_THUMB_INTERWORK-o .\taskplot.o --omf_browse .\taskplot.crf --depend .\taskplot.d)
+F (.\AL\taskPlot.h)(0x676AC085)()
+F (.\AL\taskTerminal.c)(0x676AC080)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -IFreeRTOS\Source\include -IFreeRTOS\Source\portable\RVDS\ARM7_LPC21xx -I.-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-DARM7_LPC21xx_KEIL_RVDS -DKEIL_THUMB_INTERWORK-o .\taskterminal.o --omf_browse .\taskterminal.crf --depend .\taskterminal.d)
+F (.\AL\taskTerminal.h)(0x6769C6B7)()
+F (.\HAL\KS0108.c)(0x676AC7CD)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -IFreeRTOS\Source\include -IFreeRTOS\Source\portable\RVDS\ARM7_LPC21xx -I.-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-DARM7_LPC21xx_KEIL_RVDS -DKEIL_THUMB_INTERWORK-o .\ks0108.o --omf_browse .\ks0108.crf --depend .\ks0108.d)
+F (.\HAL\KS0108.h)(0x676AC085)()
+F (.\MCAL\ADC.c)(0x676AC7F3)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -IFreeRTOS\Source\include -IFreeRTOS\Source\portable\RVDS\ARM7_LPC21xx -I.-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-DARM7_LPC21xx_KEIL_RVDS -DKEIL_THUMB_INTERWORK-o .\adc.o --omf_browse .\adc.crf --depend .\adc.d)
 F (.\MCAL\ADC.h)(0x67646BE5)()
-F (.\MCAL\DAC.c)(0x67646C18)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -IFreeRTOS\Source\include -IFreeRTOS\Source\portable\RVDS\ARM7_LPC21xx -I.-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-DARM7_LPC21xx_KEIL_RVDS -DKEIL_THUMB_INTERWORK-o .\dac.o --omf_browse .\dac.crf --depend .\dac.d)
+F (.\MCAL\DAC.c)(0x6769BCEE)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -IFreeRTOS\Source\include -IFreeRTOS\Source\portable\RVDS\ARM7_LPC21xx -I.-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-DARM7_LPC21xx_KEIL_RVDS -DKEIL_THUMB_INTERWORK-o .\dac.o --omf_browse .\dac.crf --depend .\dac.d)
 F (.\MCAL\DAC.h)(0x67646BCE)()
-F (.\MCAL\GPIO.c)(0x67646C12)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -IFreeRTOS\Source\include -IFreeRTOS\Source\portable\RVDS\ARM7_LPC21xx -I.-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-DARM7_LPC21xx_KEIL_RVDS -DKEIL_THUMB_INTERWORK-o .\gpio.o --omf_browse .\gpio.crf --depend .\gpio.d)
-F (.\MCAL\GPIO.h)(0x6764690D)()
-F (.\MCAL\UART.c)(0x67646BA0)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -IFreeRTOS\Source\include -IFreeRTOS\Source\portable\RVDS\ARM7_LPC21xx -I.-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-DARM7_LPC21xx_KEIL_RVDS -DKEIL_THUMB_INTERWORK-o .\uart.o --omf_browse .\uart.crf --depend .\uart.d)
+F (.\MCAL\GPIO.c)(0x676AC085)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -IFreeRTOS\Source\include -IFreeRTOS\Source\portable\RVDS\ARM7_LPC21xx -I.-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-DARM7_LPC21xx_KEIL_RVDS -DKEIL_THUMB_INTERWORK-o .\gpio.o --omf_browse .\gpio.crf --depend .\gpio.d)
+F (.\MCAL\GPIO.h)(0x676AC085)()
+F (.\MCAL\UART.c)(0x676AC080)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -IFreeRTOS\Source\include -IFreeRTOS\Source\portable\RVDS\ARM7_LPC21xx -I.-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-DARM7_LPC21xx_KEIL_RVDS -DKEIL_THUMB_INTERWORK-o .\uart.o --omf_browse .\uart.crf --depend .\uart.d)
 F (.\MCAL\UART.h)(0x67646BB1)()
 F (.\FreeRTOS\Source\portable\RVDS\ARM7_LPC21xx\port.c)(0x67639460)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -IFreeRTOS\Source\include -IFreeRTOS\Source\portable\RVDS\ARM7_LPC21xx -I.-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-DARM7_LPC21xx_KEIL_RVDS -DKEIL_THUMB_INTERWORK-o .\port.o --omf_browse .\port.crf --depend .\port.d)
 I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C819B4)
 I (FreeRTOS\Source\include\FreeRTOS.h)(0x67639460)
 I (C:\Keil\ARM\ARMCC\include\stddef.h)(0x51C819B4)
 I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C819B4)
-I (.\FreeRTOSConfig.h)(0x67642E24)
+I (.\FreeRTOSConfig.h)(0x6769C220)
 I (C:\Keil\ARM\Inc\Philips\lpc21xx.h)(0x532C4638)
 I (FreeRTOS\Source\include\projdefs.h)(0x67639460)
 I (FreeRTOS\Source\include\portable.h)(0x67639460)
@@ -55,7 +55,7 @@ I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C819B4)
 I (FreeRTOS\Source\include\FreeRTOS.h)(0x67639460)
 I (C:\Keil\ARM\ARMCC\include\stddef.h)(0x51C819B4)
 I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C819B4)
-I (.\FreeRTOSConfig.h)(0x67642E24)
+I (.\FreeRTOSConfig.h)(0x6769C220)
 I (C:\Keil\ARM\Inc\Philips\lpc21xx.h)(0x532C4638)
 I (FreeRTOS\Source\include\projdefs.h)(0x67639460)
 I (FreeRTOS\Source\include\portable.h)(0x67639460)
@@ -63,14 +63,14 @@ I (FreeRTOS\Source\include\deprecated_definitions.h)(0x67639460)
 I (FreeRTOS\Source\include\..\..\Source\portable\RVDS\ARM7_LPC21xx\portmacro.h)(0x67639460)
 I (FreeRTOS\Source\include\mpu_wrappers.h)(0x67639460)
 I (FreeRTOS\Source\include\list.h)(0x67639460)
-F (.\FreeRTOSConfig.h)(0x67642E24)()
+F (.\FreeRTOSConfig.h)(0x6769C220)()
 F (.\FreeRTOS\Source\portable\MemMang\heap_2.c)(0x673EBC0C)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -IFreeRTOS\Source\include -IFreeRTOS\Source\portable\RVDS\ARM7_LPC21xx -I.-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-DARM7_LPC21xx_KEIL_RVDS -DKEIL_THUMB_INTERWORK-o .\heap_2.o --omf_browse .\heap_2.crf --depend .\heap_2.d)
 I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C819B4)
 I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C819B4)
 I (FreeRTOS\Source\include\FreeRTOS.h)(0x67639460)
 I (C:\Keil\ARM\ARMCC\include\stddef.h)(0x51C819B4)
 I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C819B4)
-I (.\FreeRTOSConfig.h)(0x67642E24)
+I (.\FreeRTOSConfig.h)(0x6769C220)
 I (C:\Keil\ARM\Inc\Philips\lpc21xx.h)(0x532C4638)
 I (FreeRTOS\Source\include\projdefs.h)(0x67639460)
 I (FreeRTOS\Source\include\portable.h)(0x67639460)
@@ -86,7 +86,7 @@ I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C819B4)
 I (FreeRTOS\Source\include\FreeRTOS.h)(0x67639460)
 I (C:\Keil\ARM\ARMCC\include\stddef.h)(0x51C819B4)
 I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C819B4)
-I (.\FreeRTOSConfig.h)(0x67642E24)
+I (.\FreeRTOSConfig.h)(0x6769C220)
 I (C:\Keil\ARM\Inc\Philips\lpc21xx.h)(0x532C4638)
 I (FreeRTOS\Source\include\projdefs.h)(0x67639460)
 I (FreeRTOS\Source\include\portable.h)(0x67639460)
@@ -103,7 +103,7 @@ I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C819B4)
 I (FreeRTOS\Source\include\FreeRTOS.h)(0x67639460)
 I (C:\Keil\ARM\ARMCC\include\stddef.h)(0x51C819B4)
 I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C819B4)
-I (.\FreeRTOSConfig.h)(0x67642E24)
+I (.\FreeRTOSConfig.h)(0x6769C220)
 I (C:\Keil\ARM\Inc\Philips\lpc21xx.h)(0x532C4638)
 I (FreeRTOS\Source\include\projdefs.h)(0x67639460)
 I (FreeRTOS\Source\include\portable.h)(0x67639460)

@@ -3,7 +3,7 @@
 // @title Task Title
 
 #include "taskPlot.h"
-#include "../HAL/KS0108_interface.h"
+#include "../HAL/KS0108.h"
 
 
 #include <FreeRTOS.h>
