@@ -16,9 +16,6 @@
 
 extern volatile QueueHandle_t queueSamplesToPlot;
 
-extern volatile uint16_t arraySamplesToGenerate[N_ARRAY];
-
-extern volatile uint16_t ticksDelayAfterGenerate;
 extern volatile uint16_t ticksDelayAfterCapture;
 
 // Function definitions go here
@@ -37,6 +34,10 @@ void taskCapture(void *unused)
 					// Data was successfully sent to the queue
 					}
 				vTaskDelay(ticksDelayAfterCapture);
+			} 
+			else
+			{
+				vTaskDelay(pdMS_TO_TICKS(500)); // wait if not busy to let other tasks run
 			}
 		}
 }

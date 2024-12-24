@@ -25,15 +25,13 @@ void taskPlot(void *param) {
 	KS0108_clearScreen();
 	
 	while (1) {
-		vTaskDelay(pdMS_TO_TICKS(2)); 
 		if(xQueueReceive(queueSamplesToPlot,&value_buffer,portMAX_DELAY)==pdPASS){ //check if there is a value in the queue
        		KS0108_clearColumn(column_counter);  //clear the current column 
 		     	KS0108_setPixel(column_counter,(value_buffer/64)+32); //set the new value for the column
 			
 			    column_counter= (column_counter + 1) % 128 ; //the new value for the counter
-
-			
-		}
-        
+		} else {
+				vTaskDelay(pdMS_TO_TICKS(500));   // wait if not busy to let other tasks run
+    } 
 	}
 }

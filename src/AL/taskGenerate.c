@@ -11,36 +11,32 @@
 
 #define N_ARRAY 1000
 #define N_QUEUE 100
-#define SAMPLE_INCREMENT 10
 
-extern volatile QueueHandle_t queueSamplesToPlot;
 
 extern volatile uint16_t arraySamplesToGenerate[N_ARRAY];
 
 extern volatile uint16_t ticksDelayAfterGenerate;
-extern volatile uint16_t ticksDelayAfterCapture;
+
+uint16_t sample = 0, sampleIndex = 0;
 
 void taskGenerate(void *unused) {
-		 uint16_t currentSample = 0;
 
-     DAC_init();
+  DAC_init();
 	
 	while (1) {
-        // Generate a sample
-        currentSample = (currentSample + SAMPLE_INCREMENT) % 1024; // Keep values within 10-bit range
-        
-        // Output the sample to the DAC
-        DAC_write(currentSample);
-        
-        // Optionally send the sample to the plot queue
-        if (queueSamplesToPlot != NULL) {
-            xQueueSend(queueSamplesToPlot, &currentSample, portMAX_DELAY);
-        }
-
         // Delay between samples based on the configured ticks
         if (ticksDelayAfterGenerate > 0) {
+					  sampleIndex = (sampleIndex + 1) % N_ARRAY;
+		
+						sample = arraySamplesToGenerate[sampleIndex];
+					
+					  // Output the sample to the DAC
+					  DAC_write(sample);
+					
             vTaskDelay(ticksDelayAfterGenerate);
-        }
+        } else {
+					vTaskDelay(pdMS_TO_TICKS(500));  // wait if not busy to let other tasks run
+				}
 	}
 }
 

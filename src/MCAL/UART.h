@@ -13,7 +13,6 @@ void UART_init(void);
 
 void UART_receiveLine(uint8_t * buffer, uint16_t bufferSize);
 
-void UART_sendLine(uint8_t * buffer, uint16_t stringLength);
-
+void UART_sendString(uint8_t * str);
 
 #endif // UART_H

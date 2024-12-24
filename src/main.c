@@ -24,10 +24,10 @@ int main(void) {
 		queueSamplesToPlot = xQueueCreate(N_QUEUE, sizeof(uint16_t));
 	
     // Create tasks
-		xTaskCreate(taskCapture, "taskCapture", 2000, NULL, tskIDLE_PRIORITY + 2, NULL);
-		xTaskCreate(taskGenerate, "taskGenerate", 2000, NULL, tskIDLE_PRIORITY + 2, NULL);
-	  xTaskCreate(taskPlot, "taskPlot", 2000, NULL, tskIDLE_PRIORITY + 1, NULL);
-		xTaskCreate(taskTerminal, "taskTerminal", 2000, NULL, tskIDLE_PRIORITY, NULL);
+		xTaskCreate(taskCapture,  "taskCapture",  300,  NULL, tskIDLE_PRIORITY + 2,  NULL);
+		xTaskCreate(taskGenerate, "taskGenerate", 300,  NULL, tskIDLE_PRIORITY + 2,  NULL);
+	  xTaskCreate(taskPlot,     "taskPlot",     300,  NULL, tskIDLE_PRIORITY + 1,  NULL);
+		xTaskCreate(taskTerminal, "taskTerminal", 600,  NULL, tskIDLE_PRIORITY,      NULL);
 	
     // Start the FreeRTOS scheduler
     vTaskStartScheduler();
