@@ -54,3 +54,42 @@ dkms.conf
 # drawio
 *.bkp
 *.drawio
+
+# Keil µVision 4 specific files
+*.axf
+*.bak
+*.dep
+*.htm
+*.lnp
+*.lst
+*.map
+*.obj
+*.plg
+*.tid
+
+# Output directories
+Objects/
+Listings/
+
+# Temporary and backup files
+*.o
+*.d
+*.bkp
+*.aps
+*.ini.bak
+*.uvguix.*
+*.lnk
+
+# Debug files
+*.dmp
+*.crf
+*.uvoptx.bak
+*.uvopt.bak
+
+# IDE-specific files (optional)
+*.log
+*.tmp
+
+# Exclude hidden system files
+.DS_Store
+Thumbs.db
