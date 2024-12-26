@@ -415,21 +415,16 @@
               <FileType>2</FileType>
               <FilePath>.\Startup.s</FilePath>
             </File>
+            <File>
+              <FileName>defs.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\defs.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
           <GroupName>AL</GroupName>
           <Files>
-            <File>
-              <FileName>taskCapture.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\AL\taskCapture.c</FilePath>
-            </File>
-            <File>
-              <FileName>taskCapture.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\AL\taskCapture.h</FilePath>
-            </File>
             <File>
               <FileName>taskGenerate.c</FileName>
               <FileType>1</FileType>
@@ -480,16 +475,6 @@
         <Group>
           <GroupName>MCAL</GroupName>
           <Files>
-            <File>
-              <FileName>ADC.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\MCAL\ADC.c</FilePath>
-            </File>
-            <File>
-              <FileName>ADC.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\MCAL\ADC.h</FilePath>
-            </File>
             <File>
               <FileName>DAC.c</FileName>
               <FileType>1</FileType>

@@ -9,21 +9,11 @@
 
 #include <stdint.h>
 
-typedef enum{
-	GPIO_PORT0,
-  GPIO_PORT1	
-}GPIO_PORT_t;
+typedef enum { GPIO_PORT0, GPIO_PORT1 } GPIO_PORT_t;
 
-typedef enum{
-	GPIO_INPUT,
-  GPIO_OUTPUT	
-}GPIO_t;
+typedef enum { GPIO_INPUT, GPIO_OUTPUT } GPIO_t;
 
-typedef enum{
-	GPIO_LOW,
-  GPIO_HIGH
-}GPIO_OUTPUT_t;
-
+typedef enum { GPIO_LOW, GPIO_HIGH } GPIO_OUTPUT_t;
 
 void GPIO_setPinDirection(GPIO_PORT_t port, uint8_t pin, GPIO_t isOutput);
 
